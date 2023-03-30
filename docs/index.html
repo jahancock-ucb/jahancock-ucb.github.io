@@ -5,13 +5,45 @@
   <title>Link in Bio</title>
   <style>
     body {
-      padding: 40px 0px;      ;
+      padding: 40px 0px;
+      background-color: #004643;
+    }
+
+    .name {
+      color: #fffffe;
+    }
+
+    .social-icons a {
+      color: #fffffe;
+      text-decoration: none;
+    }
+
+    .link {
+      background-color: #f9bc60;
+    }
+
+    .link a{
+      color: #001e1d;
+      text-decoration: none;
     }
     
     .banner-image {
       width: 128px;
       height: 128px;
       object-fit: cover;
+      border-radius: 128px;
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
     }
 
 
@@ -19,46 +51,47 @@
 </head>
 <body>
 
-<div class="banner-image">
-  <img src="thumbnails/profile-pic.jpg" alt="Jordan LaManna">
-</div>    
+  <div class="items">
+    <div class="banner">
+      <img src="thumbnails/profile-pic.jpg" alt="Jordan LaManna" class="banner-image">
+    </div>    
 
-<div class="name">
-  Jordan LaManna
-</div>
+    <div class="name">
+      Jordan LaManna
+    </div>
 
-<div class="social-icons">
-  <a href="https://github.com/jahancock-ucb" target="_blank">
-    Github
-  </a>
-  <a href="https://www.instagram.com/jordanalamanna/" target="_blank">
-    Instagram
-  </a>
-  <a href="https://www.linkedin.com/in/jordanahancock/" target="_blank">
-    LinkedIn
-  </a>
-</div>
+    <div class="social-icons">
+      <a href="https://github.com/jahancock-ucb" target="_blank">
+        Github
+      </a>
+      <a href="https://www.instagram.com/jordanalamanna/" target="_blank">
+        Instagram
+      </a>
+      <a href="https://www.linkedin.com/in/jordanahancock/" target="_blank">
+        LinkedIn
+      </a>
+    </div>
 
-<div class="link">
-  <img src="thumbnails/chicago-restaurants.jpg">
-  <a href="https://www.cntraveler.com/gallery/best-restaurants-in-chicago" target="_blank">
-    The 26 Best Restaurants in Chicago - Conde Nast
-  </a>
-</div>
+    <div class="link">
+      <img src="thumbnails/chicago-restaurants.jpg" class="thumbnail">
+      <a href="https://www.cntraveler.com/gallery/best-restaurants-in-chicago" target="_blank">
+        The 26 Best Restaurants in Chicago - Conde Nast
+      </a>
+    </div>
 
-<div class="link">
-  <img src="thumbnails/st-john.jpg">
-  <a href="https://stjohn-beachguide.com/10-best-st-john-beaches/" target="_blank">
-    10 Best St John Beaches - St John Beach Guide
-  </a>
-</div>
+    <div class="link">
+      <img src="thumbnails/st-john.jpg" class="thumbnail">
+      <a href="https://stjohn-beachguide.com/10-best-st-john-beaches/" target="_blank">
+        10 Best St John Beaches - St John Beach Guide
+      </a>
+  </div>
 
 
-<div class="link">
-  <img src="thumbnails/winston.JPG">
-  <a href="https://www.chewy.com/kong-plush-duck-dog-toy/dp/51534" target="_blank">
-    Winston's Favorite Toy
-  </a>
-
+  <div class="link">
+    <img src="thumbnails/winston.JPG" class="thumbnail">
+    <a href="https://www.chewy.com/kong-plush-duck-dog-toy/dp/51534" target="_blank">
+      Winston's Favorite Toy
+    </a>
+  </div>
 </body>
 </html>
